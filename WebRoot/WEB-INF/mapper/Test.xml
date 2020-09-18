@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE mapper  
+PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"  
+"http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+
+	<!-- 务必配置正确namespace 就是所映射的接口类-->
+<mapper namespace="cn.cmts.cm.dao.ITestDao">
+
+	<select id="queryCount"   resultType="int">
+		select count(1) from test 
+	</select>
+	
+	
+</mapper>  
